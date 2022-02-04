@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Catamaran;
+  font-size: 22px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/BG1.jpg);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+  position: center;
+  
+}
+
+.btn {
+  background-color: pink (200, 100%, 50%);
+  border: 1px solid palevioletred (200, 100%, 30%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: purple;
+  outline: none;
+  position: center;
+}
+
+.btn:hover {
+  border-color: black;
+  cursor: pointer;
+}
+
+html{
+  background-image: url(images/BG1.jpg);
+}
+center{
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+#btnHome {
+  background-image: linear-gradient(white, #c88fef );
+  border: 30px ;
+  padding: 5px 10px;
+  color: purple;
+  outline: none;
+  height: 70px;
+  width: 250px;
+  font-size: 50px;
+  font-family: freestyle script;
+  position: center;
+  cursor: pointer;
+  margin-top: px;
+}

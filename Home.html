@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="Home_Style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="icon.ico"/>
+  <title>Amnesia</title>
+</head>
+<!--This script for the snow -->
+<script>
+  $.fn.title = function() {
+  $(this).each(function() {
+    $(this).html($(this).text().split("").map(function(v, i) {
+      return '<span class="title-' + '">' + v + '</span>';
+    }).join(""));
+  });
+};
+
+$(function() { 
+  $('h1.title').title();
+});
+</script>
+<body>
+
+  <div id = "snow"></div>
+  <h1 class = "title">Amnesia</h1>
+  <div class ="center">
+    <button id = "btnStart"><a href ="index.html">Click to Start</a></button>
+</div>
+<audio id="audio"   autoplay loop><source src="Music/Romantic.wav" type="audio/wav"></audio>
+
+</body>
+</html>
